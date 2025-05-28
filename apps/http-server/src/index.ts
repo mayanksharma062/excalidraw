@@ -8,12 +8,12 @@ app.post("/signup", (req, res)=>{
   // db Call
 
   res.json({
-    auth: "123123";
+    userId: "123123"
   })
   
 })
 
-app.post("/signin", (req, res)=>{
+app.post("/signIn", (req, res)=>{
 
   const userId = 1;
   const token = jwt.sign({
@@ -33,7 +33,7 @@ app.post("/room",middleware, (req, res)=>{
 
 
   res.json({
-    roomId: "123";
+    roomId: "123"
   })
 })
 
